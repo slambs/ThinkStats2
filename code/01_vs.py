@@ -1,14 +1,10 @@
-# 13.12.2018 - i go by the book and "play" with the examples at hand
+# 13.12.2018 - EDA
 
-import thinkstats2  #import dependencies
+# i go by the book and "play" with the examples at hand
 
-# define a function to import 
-# a stata dictionary file and
-# turn it into a dataframe
+# I DO NOT NEED TO define a function to import all the data in a 
+# a dataframe.  I can simply
 
-def ReadFemPreg(dct_file='2002FemPreg.dct', dat_file= '2002FemPreg.dat.gz' ):
-    dct = thinkstats2.ReadStataDct(dct_file)
-    df = dct.ReadFixedWidth(dat_file,compression='gzip')
-    CleanFemPreg(df)
-    return df
+import nsfg             # import dependencies and
+df = nsfg.ReadFemPreg() # store the relevant data in a dataframe
     
