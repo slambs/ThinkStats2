@@ -7,4 +7,7 @@
 
 import nsfg             # import dependencies and
 df = nsfg.ReadFemPreg() # store the relevant data in a dataframe
-    
+
+df.caseid # unique case id
+df.prglnght #Variable for Pregnancy length
+ # is it a live birth
